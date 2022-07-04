@@ -1,0 +1,25 @@
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0px;
+}
+
+body {
+  background: #343a40;
+}
+
+.box {
+  height: 350px;
+  margin-top: 60px;
+  /* width: 400px; */
+  padding: 149px;
+  border: solid 2px white;
+}
+.box p{
+  font-size: medium;
+}
+
+.box_2{
+  height: 350px;
+  border: solid 2px white;
+}
