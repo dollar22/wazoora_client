@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { isAutheticated } from "../auth/helper";
 import Base from "../core/Base";
@@ -44,10 +43,10 @@ const UserDashBoard = () => {
             <span className="badge badge-success mr-2">Email:</span> {email}
           </li>
           <li className="list-group-item">
-            <span className="badge badge-success mr-2">Invested:</span> {invested}
+            <span className="badge badge-success mr-2">Invested:</span> {invested} ₹
           </li>
           <li className="list-group-item">
-            <span className="badge badge-success mr-2">Earned:</span> {earned }
+            <span className="badge badge-success mr-2">Earned:</span> {earned } ₹
           </li>
           <li className="list-group-item">
             <span className="badge badge-success mr-2">Token :</span> {referToken }
@@ -62,13 +61,13 @@ const UserDashBoard = () => {
   };
   return (
     <Base
-      title="Welcome to User Dash Board"
-      description="user can manage his account here "
+      title="Welcome"
+      description=""
       className="container bg-success p-4"
     >
       <div className="row">
-        <div className="col-3">{adminLeftSide()}</div>
-        <div className="col-9">{adminRightSide()}</div>
+        {/* <div className="col-3">{adminLeftSide()}</div> */}
+        <div className="col">{adminRightSide()}</div>
       </div>
     </Base>
   );
