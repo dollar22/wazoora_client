@@ -142,7 +142,7 @@ const Signin = () => {
       {performRedirect()}
       <Link to="/reset" className="text-center nav-link" style={{ marginLeft: "478px" }}>Forget Password</Link>
       <ToastContainer />
-      <CourseCard />
+      {/* <CourseCard /> */}
 
       {/* <p className="text-white text-center">{JSON.stringify(values)}</p> */}
     </Base>
