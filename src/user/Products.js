@@ -64,6 +64,9 @@ export const Products = () => {
                 <p className="card-text" style={{ color: "black" }}>
                   {data.description}
                 </p>
+                <p className="card-text" style={{ color: "black" }}>
+                  {data.price}₹
+                </p>
                 <button className="btn btn-primary" onClick={(e) => Buy(data)}>
                   Buy
                 </button>
