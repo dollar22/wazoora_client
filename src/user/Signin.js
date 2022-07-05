@@ -140,7 +140,7 @@ const Signin = () => {
       {errorMessage()}
       {signInForm()}
       {performRedirect()}
-      <Link to="/reset" className="text-center nav-link" style={{ marginLeft: "478px" }}>Forget Password</Link>
+      {/* <Link to="/reset" className="text-center nav-link" style={{ marginLeft: "478px" }}>Forget Password</Link> */}
       <ToastContainer />
       {/* <CourseCard /> */}
 

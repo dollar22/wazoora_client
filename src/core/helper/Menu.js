@@ -12,21 +12,13 @@ const currentTab = (history, path) => {
 
 const Menu = ({ history }) => (
   <div>
-    <ul className="nav nav-tabs bg-dark">
+    <ul className="nav nav-tabs bg-dark justify-content-center">
       <li className="nav-item">
         <Link style={currentTab(history, "/")} className="nav-link" to="/">
           Home
         </Link>
       </li>
-      {/* <li className="nav-item">
-        <Link
-          style={currentTab(history, "/cart")}
-          className="nav-link"
-          to="/cart"
-        >
-          Cart
-        </Link>
-      </li> */}
+
       {isAutheticated() && isAutheticated().user?.role === 0 && (
         <li className="nav-item">
           <Link
