@@ -53,10 +53,6 @@ export const Products = () => {
 
   };
   return (
-    <Base
-      title="All Products"
-      description="User can Buy Products and Show All Products"
-    >
       <div className="row">
         {product.map((data, i) => {
           return (
@@ -76,8 +72,6 @@ export const Products = () => {
           );
         })}
       </div>
-
-    </Base>
   );
 };
 export default Products;
