@@ -44,11 +44,11 @@ export const Products = () => {
   }
   const Buy = async (data) => {
     setPrduct(data);
-    // const response = await fetch(`http://localhost:8000/payment/paymentData/${data.price}`, {
-    //   method: "POST",
-    //   // body: JSON.stringify({ data.price })
-    // }).then((t) => t.json());
-    // console.log(response)
+    const response = await fetch(`http://localhost:8000/payment/paymentData/${data.price}`, {
+      method: "POST",
+      // body: JSON.stringify({ data.price })
+    }).then((t) => t.json());
+    console.log(response)
     displayRazorpay(data)
 
   };
