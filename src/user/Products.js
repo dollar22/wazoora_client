@@ -44,7 +44,7 @@ export const Products = () => {
   }
   const Buy = async (data) => {
     setPrduct(data);
-    const response = await fetch(`http://localhost:8000/payment/paymentData/${data.price}`, {
+    const response = await fetch(`${API}/payment/paymentData/${data.price}`, {
       method: "POST",
       body: JSON.stringify({data})
     }).then((t) => t.json());

@@ -17,8 +17,8 @@ const Signin = () => {
 
   }
   const [values, setValues] = useState({
-    email: "anttalvishu125@gmail.com",
-    password: "25222500",
+    email: "",
+    password: "",
     error: "",
     loading: false,
     didRedirect: false,
