@@ -16,6 +16,7 @@ import ManageFile from "./admin/ManageFile";
 import { Mainpdf } from "./admin/MainPdf";
 import { ResetPassword } from "./user/ResetForm";
 import { NewPassword } from "./user/Newpass";
+import {About} from "./components/About"
 
 const Routes = () => {
   return (
@@ -34,6 +35,7 @@ const Routes = () => {
         <Route path="/admin/managefiles" exact component={ManageFile} />
         <Route path="/mainpdf" exact component={Mainpdf} />
         <Route path="/reset" exact component={ResetPassword} />
+        <Route path="/about" exact component={AboutUs} />
         <Route path="/newpass" exact component={NewPassword} />
        </Switch>
     </BrowserRouter>

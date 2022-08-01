@@ -19,6 +19,12 @@ const Menu = ({ history }) => (
         </Link>
       </li>
 
+      <li className="nav-item">
+        <Link style={currentTab(history, "/about")} className="nav-link" to="/about">
+          About Us
+        </Link>
+      </li>
+
       {isAutheticated() && isAutheticated().user?.role === 0 && (
         <li className="nav-item">
           <Link
